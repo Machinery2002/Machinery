@@ -1,32 +1,32 @@
 #include<stdio.h>					//打招呼-#include<> 
-									//#指令形式  include-包含
-									//std-standard标准  i-input输入  o-output输出 
-									//int main()主函数-程序入口（必须有且仅有一个） 
-									//int是整型 ，main前的int表示mian函数调用后返回一个整型值 
+							//#指令形式  include-包含
+							//std-standard标准  i-input输入  o-output输出 
+							//int main()主函数-程序入口（必须有且仅有一个） 
+							//int是整型 ，main前的int表示mian函数调用后返回一个整型值 
 int num2 = 10;						//全局变量   定义在{}代码块之外的变量   作用域是整个工程
-int main()							//void main()也行，但是是过时的写法 
+int main()						//void main()也行，但是是过时的写法 
 {
 	int num1 = 10;					//局部变量（有限但是优先）   定义在{}代码块之内的变量  且之存在于单独一个{}中(生命周期)
-	printf("hello world\n");		//程序任务
-									//函数 print-打印  f-function函数
-									//printf-库函数-c语言本身提供的函数
-									//双引号表示引用   \n表示换行 
-	return 0;						//返回整型 0
+	printf("hello world\n");			//程序任务
+							//函数 print-打印  f-function函数
+							//printf-库函数-c语言本身提供的函数
+							//双引号表示引用   \n表示换行 
+	return 0;					//返回整型 0
 }
-									//类型定义-让系统在内存里面分出空间 (''进行引用字符，否则就是ascll中对应的数字) 
-									//数值范围不同 ，内存消耗不同 
-									//%打印中，d对应整型，c对应字符型，f对应浮点型（小数）,p对应地址形式，x对应16进制 
-char 变量 = '字符';					//char-字符数据类型  范围大小：1字节 
-									//printf("%c\n",变量)    %c-打印字符格式的数据     以字符的形式打印变量的字符 
-									//printf("%d\n",变量)    %c-打印整型十进制数据     以字符的形式打印变量的字符 
-int 变量 = 数字;					//int-整型  范围大小：2字节
-short 变量 = 数字;					//short int-短整型(short) 范围大小：4字节
-long 变量 = 数字;					//long-长整型   范围大小：4/8字节  ----sizeof(long)>=sizeof(int)
-long long 变量 = 数字;				//long long-更长的整型  范围大小：8字节
-float 变量 = 数字;					//float-单精度浮点数  （小数点后6位） 范围大小：4字节
-double 变量 = 数字;					//double -双精度浮点数 打印时候用%lf （双精度6位）  范围大小：8字节
-scanf("%d%d", &num1, &num2);		//输入函数scanf
-									//输入几个值就有几个%    &-取地址符号   将输入数据放入标记地址
-int sum = num1 + num2;				//c语言规定，变量要定义在当前代码块的最前面
-printf("sum=%d\n", sum);			//输出时显示   sum=值
+							//类型定义-让系统在内存里面分出空间 (''进行引用字符，否则就是ascll中对应的数字) 
+							//数值范围不同 ，内存消耗不同 
+							//%打印中，d对应整型，c对应字符型，f对应浮点型（小数）,p对应地址形式，x对应16进制 
+char 变量 = '字符';					     //char-字符数据类型  范围大小：1字节 
+							//printf("%c\n",变量)    %c-打印字符格式的数据     以字符的形式打印变量的字符 
+							//printf("%d\n",变量)    %c-打印整型十进制数据     以字符的形式打印变量的字符 
+int 变量 = 数字;					     //int-整型  范围大小：2字节
+short 变量 = 数字;					     //short int-短整型(short) 范围大小：4字节
+long 变量 = 数字;					     //long-长整型   范围大小：4/8字节  ----sizeof(long)>=sizeof(int)
+long long 变量 = 数字;				     //long long-更长的整型  范围大小：8字节
+float 变量 = 数字;					     //float-单精度浮点数  （小数点后6位） 范围大小：4字节
+double 变量 = 数字;					     //double -双精度浮点数 打印时候用%lf （双精度6位）  范围大小：8字节
+scanf("%d%d", &num1, &num2);				//输入函数scanf
+							//输入几个值就有几个%    &-取地址符号   将输入数据放入标记地址
+int sum = num1 + num2;					//c语言规定，变量要定义在当前代码块的最前面
+printf("sum=%d\n", sum);				//输出时显示   sum=值
 extern int g_val;					//extern声明外部符号（调用其他工程文件中的定义）
