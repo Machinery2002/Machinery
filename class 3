@@ -1,0 +1,11 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+														                      //学习语言(c/c++/java/python......)
+														                      //学习算法，数据结构(DS)
+													                      	//学习系统和网络(Windows/Linux+系统编程+网络基础+网络编程)
+													                      	//动手！！！！自己思考！！！
+#include<stdio.h>
+int main()
+{
+
+	return 0;
+}
