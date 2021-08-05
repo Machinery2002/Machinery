@@ -1,11 +1,30 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-														                      //学习语言(c/c++/java/python......)
-														                      //学习算法，数据结构(DS)
-													                      	//学习系统和网络(Windows/Linux+系统编程+网络基础+网络编程)
-													                      	//动手！！！！自己思考！！！
+									//学习语言(c/c++/java/python......)
+									//学习算法，数据结构(DS)
+									//学习系统和网络(Windows/Linux+系统编程+网络基础+网络编程)
+									//动手！！！！自己思考！！！
+
+									//全局变量和局部变量名字冲突时，局部变量优先！不会报错！
+									//EOF   end of file 文件结束标志 值是-1
 #include<stdio.h>
-int main()
+int max(int a,int b)							//比较大小的函数 子函数在主函数上方可直接使用，否则需要声明
 {
+	if (a > b)
+	{
+		return a;
+	}
+	else
+	{
+		return b;
+	}
+	
+}
+int main()								//比较大小主函数
+{
+	int num1 = 0;
+	int num2 = 0;
+	scanf("%d%d", &num1, &num2);
+	printf("最大值：%d",max(num1, num2));
 
 	return 0;
 }
