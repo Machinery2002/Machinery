@@ -1,4 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS 1					//防止vs报错安全问题
+#define _CRT_SECURE_NO_WARNINGS 1					//防止vs报错安全问题（否则会要求使用scanf_s）
+
 									//学习语言(c/c++/java/python......)
 									//学习算法，数据结构(DS)
 									//学习系统和网络(Windows/Linux+系统编程+网络基础+网络编程)
